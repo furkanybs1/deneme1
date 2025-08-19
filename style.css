@@ -1,0 +1,112 @@
+/* Basic reset and font setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background: #4d76a1;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.tagline {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #2a5074;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 0.5rem;
+}
+
+button {
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background: #4d76a1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3d5d83;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+}
+
+#file-list {
+    margin-top: 0.5rem;
+    padding-left: 0;
+}
+
+#file-list .file-item {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f0f0f0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.caption {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Commons Video Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Creative&nbsp;Commons Video Creator</h1>
+        <p class="tagline">Create videos using royalty‑free clips from YouTube and free stock footage</p>
+    </header>
+
+    <main>
+        <!-- Idea input section -->
+        <section id="idea-section">
+            <h2>1. Describe your video idea</h2>
+            <p>Enter a short description of the topic you want to cover. The site will suggest keywords you can use when searching for Creative&nbsp;Commons videos on YouTube.</p>
+            <textarea id="idea-input" placeholder="e.g., A relaxing montage of nature scenes at sunset..." rows="4"></textarea>
+            <button id="generate-btn">Generate search suggestions</button>
+        </section>
+
+        <!-- Suggestions section -->
+        <section id="suggestions-section" class="hidden">
+            <h2>2. Suggested search keywords</h2>
+            <p>Use the following keywords when searching on YouTube. After searching, click <strong>Filters</strong> and choose <strong>Creative Commons</strong> under the Features list to see videos you can reuse. This filter ensures that the results have a Creative Commons license【381938444766995†L443-L447】.</p>
+            <ul id="keywords-list"></ul>
+        </section>
+
+        <!-- Instructions section -->
+        <section id="instructions-section">
+            <h2>3. Download Creative&nbsp;Commons clips</h2>
+            <p>Follow these steps to gather clips:</p>
+            <ol>
+                <li>Open <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a> in a new tab.</li>
+                <li>Enter one of the suggested keywords into the search bar and press <em>Enter</em>.</li>
+                <li>Click <strong>Filters</strong> (above the search results).</li>
+                <li>Under <strong>Features</strong>, select <strong>Creative&nbsp;Commons</strong> to show videos with a Creative Commons license【381938444766995†L443-L447】.</li>
+                <li>Preview and select the videos you like, then copy their URLs.</li>
+                <li>Download the clips using a tool that supports YouTube downloads. Make sure you respect the license terms of each video.</li>
+            </ol>
+        </section>
+
+        <!-- Upload section -->
+        <section id="upload-section">
+            <h2>4. Upload your downloaded clips (optional)</h2>
+            <p>You can upload multiple MP4 files that you have downloaded. This site will list them, but note that actual merging is not performed on this demo.</p>
+            <input type="file" id="file-input" accept="video/mp4" multiple>
+            <div id="file-list"></div>
+        </section>
+
+        <!-- Sample video section -->
+        <section id="sample-section">
+            <h2>5. Sample creative‑commons video</h2>
+            <p>Here's an example of a short creative‑commons video hosted by a public test data provider. The same provider offers 5‑second, 10‑second and 15‑second clips【828844498284762†L108-L115】.</p>
+            <video controls width="480" preload="none">
+                <source src="https://download.samplelib.com/mp4/sample-10s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="caption">Sample clip courtesy of <a href="https://samplelib.com/" target="_blank" rel="noopener">samplelib.com</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by your AI assistant. For demonstration purposes only.</p>
+    </footer>
+</body>
+</html>
